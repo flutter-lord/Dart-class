@@ -9,6 +9,10 @@ void main() {
   for (int i = 1; i <= 1000; i++) {
     int j = Random().nextInt(101);
 
+    while (i != 50) {
+     break;
+    }
+
     MyRandom myrandom = MyRandom(j);
   
     stdout.write(myrandom );
@@ -17,10 +21,6 @@ void main() {
     if (count == 10) {
       print('');
       count = 0;
-    }
-
-    while (i == 50) {
-     break;
     }
   }
 }
