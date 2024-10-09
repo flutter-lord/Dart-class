@@ -11,9 +11,9 @@ class Date {
   int get milliSeconds => _milliSeconds!;
 
   Object milliSecondsEporch() {
-    Object _a = DateTime.fromMillisecondsSinceEpoch(_milliSeconds!);
+    Object _fromEporch = DateTime.fromMillisecondsSinceEpoch(_milliSeconds!);
 
-    return _a;
+    return _fromEporch;
   }
 
   @override
