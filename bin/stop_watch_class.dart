@@ -10,13 +10,13 @@ class MyStopWatch {
     return s;
   }
 
-  void stop() {
-    void st = Stopwatch().stop();
+  Stopwatch stop() {
+    Stopwatch st = stop();
     return st;
   }
 
-  void elapSedTime() {
-    void es = Stopwatch().elapsedMilliseconds;
+  int elapSedTime() {
+    int es = elapSedTime();
     return es;
   }
 
