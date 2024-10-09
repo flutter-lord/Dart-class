@@ -6,12 +6,8 @@ import 'random_class.dart';
 void main() {
   int count = 0;
 
-  for (int i = 1; i <= 1000; i++) {
+  for (int i = 1; i <= 50; i++) {
     int j = Random().nextInt(101);
-
-    while (i != 50) {
-     break;
-    }
 
     MyRandom myrandom = MyRandom(j);
   
