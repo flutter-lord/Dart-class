@@ -10,8 +10,8 @@ class Date {
 
   int get milliSeconds => _milliSeconds!;
 
-  Object milliSecondsEporch() {
-    Object _fromEporch = DateTime.fromMillisecondsSinceEpoch(_milliSeconds!);
+  DateTime milliSecondsEporch() {
+    DateTime _fromEporch = DateTime.fromMillisecondsSinceEpoch(_milliSeconds!);
 
     return _fromEporch;
   }
