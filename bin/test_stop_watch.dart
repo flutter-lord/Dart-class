@@ -1,6 +1,13 @@
-void main() {
+import 'stop_watch_class.dart';
 
-  final stopwatch = Stopwatch();
+void main() {
+MyStopWatch mystopWatch = MyStopWatch();
+
+print(mystopWatch);
+
+print(mystopWatch.start);
+print(mystopWatch.stop);
+print(mystopWatch.elapSedTime);
 
 
 }
