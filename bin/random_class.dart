@@ -4,6 +4,7 @@ class MyRandom {
 
   MyRandom(int randomNumber) {
     _randomNumber = randomNumber;
+
   }
 
   set randomNumber (int randomNumber) {
@@ -14,10 +15,11 @@ class MyRandom {
 
   int get randomNumber => _randomNumber!;
 
+
   @override
   String toString() {
     // TODO: implement toString
-    return '$_randomNumber';
+    return '$_randomNumber ';
   }
 
   
