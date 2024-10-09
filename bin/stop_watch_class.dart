@@ -1,12 +1,12 @@
 class MyStopWatch {
 
   
-  Object get _startTime =>  Duration.millisecondsPerSecond;
-  Object get _endtime => Duration.millisecondsPerSecond;
+  int get _startTime =>  Duration.millisecondsPerSecond;
+  int get _endtime => Duration.millisecondsPerSecond;
 
 
-  void start() {
-    void s = Stopwatch().start();
+  Stopwatch start() {
+    Stopwatch s = start();
     return s;
   }
 

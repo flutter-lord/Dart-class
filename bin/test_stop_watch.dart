@@ -5,9 +5,9 @@ MyStopWatch mystopWatch = MyStopWatch();
 
 print(mystopWatch);
 
-print(mystopWatch.start);
-print(mystopWatch.stop);
-print(mystopWatch.elapSedTime);
+print(mystopWatch.start());
+print(mystopWatch.stop());
+print(mystopWatch.elapSedTime());
 
 
 }
