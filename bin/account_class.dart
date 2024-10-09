@@ -22,12 +22,12 @@ class Account {
   String get datecreated => '${DateTime.now()}';
 
   double getMonthlyInterestRate() {
-    double _monthlyInterestRate = _annualInterestRate / 12;
+    double _monthlyInterestRate = _annualInterestRate / 100 / 12;
     return _monthlyInterestRate;
   }
 
   double getMonthlyInterest() {
-    double _monthlyInterest = balance  * (getMonthlyInterestRate() / 100);
+    double _monthlyInterest = 20000  * (getMonthlyInterestRate());
     return _monthlyInterest;
   }
 
