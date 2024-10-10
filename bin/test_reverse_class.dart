@@ -1,7 +1,7 @@
 import 'reverse_class.dart';
 
 void main()  {
-  ReverseString reversestring = ReverseString('RichArd');
+  ReverseString reversestring = ReverseString('Maryam');
 
   print(reversestring.reverse());
 }
