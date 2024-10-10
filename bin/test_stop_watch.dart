@@ -9,7 +9,7 @@ void main() {
 
   final _before =  DateTime.now();
 
-  String b = '''
+  '''
 rdxcvbhfdxbnhtrdsz bgfcvbn  qcsbhxgsv wcdacavqbjskn wwcdsfwjhb
 qmhwgsfc wnhsgxfcs qxdafghsn ewxdtshn wdsftxghn cdfghb
 jhgfcsxbnhagfc qnshgxfcz
@@ -18,7 +18,7 @@ jhgfcsxbnhagfc qnshgxfcz
   final _now = DateTime.fromMillisecondsSinceEpoch;
  print(A);
  print('$_before');
- print(b);
+ //print(b);
  print('$_now');
 
 }
