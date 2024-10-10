@@ -1,13 +1,12 @@
-import 'stop_watch_class.dart';
+//import 'stop_watch_class.dart';
 
 void main() {
-MyStopWatch mystopWatch = MyStopWatch();
+//MyStopWatch mystopWatch = MyStopWatch();
 
-//print(mystopWatch);
+int startTime = Stopwatch().;
+int endtime = Stopwatch().;
 
-print(mystopWatch.start());
-print(mystopWatch.stop());
-print(mystopWatch.elapSedTime());
-
+print('$startTime');
+print('$endtime');
 
 }

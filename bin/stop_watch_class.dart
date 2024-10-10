@@ -1,25 +1,12 @@
+import 'date_class.dart';
+
 class MyStopWatch {
 
   
-  int get _startTime =>  Duration.millisecondsPerSecond;
-  int get _endtime => Duration.millisecondsPerSecond;
+  int get _startTime =>  Stopwatch().elapsedMicroseconds;
+  int get _endtime => Stopwatch().elapsedTicks;
 
-
-  Stopwatch start() {
-    Stopwatch s = start();
-    return s;
-  }
-
-  Stopwatch stop() {
-    Stopwatch st = stop();
-    return st;
-  }
-
-  int elapSedTime() {
-    int es = elapSedTime();
-    return es;
-  }
-
+  
   
   @override
   String toString() {
