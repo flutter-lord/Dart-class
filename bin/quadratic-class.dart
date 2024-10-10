@@ -21,18 +21,18 @@ class QuadraticEquation {
   set c (double c) => _c = c;
   double get c => _c!;
 
-  dynamic getDiscriminant () {
+  double getDiscriminant () {
     double _discriminant = pow(_b!, 2) - (4 * _a! * _c!);
 
     if (_discriminant == 0) {
-      return getRoot1();
     }
-    else if (_discriminant > 0) {
-      return twoRoots() ;
-    }
-    else {
-      return 'The Quadratic Equation has no root';
-    }
+     return getRoot1();
+    // else if (_discriminant > 0) {
+    //   return twoRoots() ;
+    // }
+    // else {
+    //   return 'The Quadratic Equation has no root';
+    // }
   }
 
   double getRoot1 () {

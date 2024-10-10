@@ -1,8 +1,8 @@
 import 'quadratic-class.dart';
 
 void main() {
-  QuadraticEquation quadraticEquation = QuadraticEquation(1, 7,10);
+  QuadraticEquation quadraticEquation = QuadraticEquation(1, 1 , -2);
 
   print(quadraticEquation);
-  print(quadraticEquation.getDiscriminant());
+  //print(quadraticEquation.getDiscriminant());
 }
