@@ -8,5 +8,5 @@ void main()  {
 
   ReverseString reversestring = ReverseString(words);
 
-  print('The reverse of $words is  ${reversestring.reverse()}');
+  print('The reverse of $words is ${reversestring.reverse()}');
 }
