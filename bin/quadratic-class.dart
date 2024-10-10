@@ -27,13 +27,14 @@ class QuadraticEquation {
     if (_discriminant == 0) {
       return getRoot1();
     }
+
     else if (_discriminant > 0) {
       return twoRoots() ;
     }
+    
     else {
       return 'The Quadratic Equation has no root';
     }
-    
 
   }
 
