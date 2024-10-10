@@ -7,18 +7,14 @@ void main() {
  stdout.write('Input A as many times as  possible:');
  String A = stdin.readLineSync()!;
 
-  final _before =  DateTime.now();
+  Duration _before =  DateTime.now().timeZoneOffset;
 
-  '''
-rdxcvbhfdxbnhtrdsz bgfcvbn  qcsbhxgsv wcdacavqbjskn wwcdsfwjhb
-qmhwgsfc wnhsgxfcs qxdafghsn ewxdtshn wdsftxghn cdfghb
-jhgfcsxbnhagfc qnshgxfcz
-''';
+  int  _now = DateTime.now().second;
 
-  final _now = DateTime.fromMillisecondsSinceEpoch;
+ // int _timeDiff = _now - _before;
  print(A);
  print('$_before');
- //print(b);
  print('$_now');
+// print('$_timeDiff');
 
 }
