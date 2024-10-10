@@ -22,7 +22,7 @@ class QuadraticEquation {
   double get c => _c!;
 
   Object getDiscriminant () {
-    double _discriminant = pow(_b!, 2) - (4 * _a! * _c!);
+     double _discriminant = pow(_b!, 2) - (4 * _a! * _c!);
 
     if (_discriminant == 0) {
       return getRoot1();
