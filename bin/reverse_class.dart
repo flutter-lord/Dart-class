@@ -1,11 +1,13 @@
+import 'dart:io';
+
 class ReverseString {
-  String _words = '';
+  String _words = stdin.readLineSync()!;
 
-  // ReverseString(String words) {
-  //   _words = words;
-  // }
-
-  set word(String words) => _words = words;
+  set () {
+    stdout.write('Enter any word');
+    String words = stdin.readLineSync()!;
+    _words = words;
+  }
   String get word => _words;
 
   String reverse() {
