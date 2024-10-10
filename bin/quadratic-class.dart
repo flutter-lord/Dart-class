@@ -54,6 +54,6 @@ class QuadraticEquation {
   @override
   String toString() {
     // TODO: implement toString
-    return 'The Equation is ${_a}x^2 + ${_b}x + $c =';
+    return 'The Equation is ${_a}x^2 + ${_b}x + $c = 0';
   }
 }
