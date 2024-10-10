@@ -42,7 +42,7 @@ class QuadraticEquation {
   }
 
   double getRoot2 () {
-    double _root2 = (-_b! - sqrt(pow(_b!, 2) + (4 * _a! * _c!))) / (2 * _a!);
+    double _root2 = (-_b! - sqrt(pow(_b!, 2) - (4 * _a! * _c!))) / (2 * _a!);
     return _root2;
   }
 
