@@ -7,7 +7,7 @@ void main() {
  stdout.write('Input A as many times as  possible:');
  String A = stdin.readLineSync()!;
 
-  Duration _before =  DateTime.now().timeZoneOffset;
+  int _before =  DateTime.now().hour;
 
   int  _now = DateTime.now().second;
 
