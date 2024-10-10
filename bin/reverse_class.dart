@@ -13,7 +13,7 @@ class ReverseString {
     String c = '';
 
     for (int i = a; i >= 0; i--) {
-      String b = _words.substring(i, ++i);
+      String b = _words.substring(i, (i++));
 
      c += b;
     }
