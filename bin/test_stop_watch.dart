@@ -3,8 +3,8 @@
 void main() {
 //MyStopWatch mystopWatch = MyStopWatch();
 
-int startTime = Stopwatch().;
-int endtime = Stopwatch().;
+int startTime = 1;
+int endtime = 2;
 
 print('$startTime');
 print('$endtime');
