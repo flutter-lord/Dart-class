@@ -1,7 +1,13 @@
+import 'dart:io';
+
 import 'reverse_class.dart';
 
 void main()  {
-  ReverseString reversestring = ReverseString('man');
+
+  stdout.write('Enter any words: ');
+  String words = stdin.readLineSync()!;
+
+  ReverseString reversestring = ReverseString(words);
 
   print(reversestring.reverse());
 }
