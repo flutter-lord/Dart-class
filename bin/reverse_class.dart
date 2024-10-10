@@ -1,9 +1,9 @@
 class ReverseString {
   String _words = '';
 
-  ReverseString(String words) {
-    _words = words;
-  }
+  // ReverseString(String words) {
+  //   _words = words;
+  // }
 
   set word(String words) => _words = words;
   String get word => _words;
