@@ -12,13 +12,13 @@ class QuadraticEquation {
     _c = c;
   }
 
-  set a (double a) => _a = a;
+  //set a (double a) => _a = a;
   double get a => _a!;
 
-  set b (double b) => _b = b;
+  //set b (double b) => _b = b;
   double get b => _b!;
 
-  set c (double c) => _c = c;
+  //set c (double c) => _c = c;
   double get c => _c!;
 
   String getSolution () {
