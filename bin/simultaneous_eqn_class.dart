@@ -31,12 +31,12 @@ class SimultaneousEqn {
   }
 
   double getX() {
-    double _x = ((_e! * _d!) - (_b! * _f!)) / getDiscriminant();
+    double _x = ((_e! * _d!) - (_b! * _f!)) / (getDiscriminant());
     return _x;
   }
 
   double getY() {
-    double _y = ((_a! * _f!) - (_e! * _c!))/ getDiscriminant(); 
+    double _y = ((_a! * _f!) - (_e! * _c!)) / (getDiscriminant()); 
     return _y;
   }
 
@@ -55,6 +55,6 @@ class SimultaneousEqn {
   @override
   String toString() {
     // TODO: implement toString
-    return '${getX()} and Y = ${getY()}';
+    return 'X = ${getX()} and Y = ${getY()}';
   }
 }
