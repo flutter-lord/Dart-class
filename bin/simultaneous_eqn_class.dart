@@ -30,16 +30,6 @@ class SimultaneousEqn {
     return _discriminant;
   }
 
-  double getX() {
-    double _x = ((_e! * _d!) - (_b! * _f!)) / (getDiscriminant());
-    return _x;
-  }
-
-  double getY() {
-    double _y = ((_a! * _f!) - (_e! * _c!)) / (getDiscriminant()); 
-    return _y;
-  }
-
   String isSolvable() {
 
     if (getDiscriminant() == 0) {
@@ -50,11 +40,20 @@ class SimultaneousEqn {
       return  '${getX()} and ${getY()}';
     }
   }
-  
-  
+
+  double getX() {
+    double _x = ((_e! * _d!) - (_b! * _f!)) / (getDiscriminant());
+    return _x;
+  }
+
+  double getY() {
+    double _y = ((_a! * _f!) - (_e! * _c!)) / (getDiscriminant()); 
+    return _y;
+  }
+
   @override
   String toString() {
     // TODO: implement toString
-    return 'The value of X = ${getX()} and Y = ${getY()}';
+    return  'X = ${getX()} and Y = ${getY()}';
   }
 }
