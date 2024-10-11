@@ -31,15 +31,18 @@ class SimultaneousEqn {
     return _discriminant; 
   }
 
-  bool isSolvable() {
+  String isSolvable() {
     double _divisor = ((_a! * _d!) - (_b! * _c!));
 
     if (_divisor == 0) {
-      return false;
+      return 'The 2 * 2 linear equation is not solvable';
     }
 
     else {
-      return true;
+     String xandY () {
+       return '${getX()} and ${getY()}';
+     }
+     return '${getX()} and ${getY()}';
     }
   }
 
@@ -51,11 +54,6 @@ class SimultaneousEqn {
   double getY() {
     double _y = (-_b! - sqrt(getDiscriminant())) / (2 * _a!);
     return _y;
-  }
-
-  String xandY () {
-    if (isSolvable() == true);
-    return '${getX()} and ${getY()}';
   }
   
   
