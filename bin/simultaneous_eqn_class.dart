@@ -1,5 +1,3 @@
-import 'dart:math';
-
 class SimultaneousEqn {
   
   double? _a;
@@ -26,40 +24,37 @@ class SimultaneousEqn {
   double get e => _e!;
   double get f => _f!;
 
+
   double getDiscriminant() {
-    double _discriminant = pow(_b!, 2) - (4 * _a! *_c!);
-    return _discriminant; 
-  }
-
-  String isSolvable() {
-    double _divisor = ((_a! * _d!) - (_b! * _c!));
-
-    if (_divisor == 0) {
-      return 'The 2 * 2 linear equation is not solvable';
-    }
-
-    else {
-     String xandY () {
-       return '${getX()} and ${getY()}';
-     }
-     return '${getX()} and ${getY()}';
-    }
+    double _discriminant = (_a! * _d!) - (_b! * _c!);
+    return _discriminant;
   }
 
   double getX() {
-    double _x = (-_b! + sqrt(getDiscriminant())) / (2 * _a!);
+    double _x = ((_e! * _d!) - (_b! * _f!)) / getDiscriminant();
     return _x;
   }
 
   double getY() {
-    double _y = (-_b! - sqrt(getDiscriminant())) / (2 * _a!);
+    double _y = ((_a! * _f!) - (_e! * _c!))/ getDiscriminant(); 
     return _y;
+  }
+
+  String isSolvable() {
+
+    if (getDiscriminant() == 0) {
+      return 'The 2 * 2 linear equqtion is not solvable'; 
+    } 
+
+    else {
+      return 'The value of X = ${getX()} and Y = ${getY()}';
+    }
   }
   
   
   @override
   String toString() {
     // TODO: implement toString
-    return 'The value of X = ${getX()} and Y = ${getY()}';
+    return '${getX()} and Y = ${getY()}';
   }
 }
