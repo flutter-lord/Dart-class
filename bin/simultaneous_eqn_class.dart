@@ -24,36 +24,8 @@ class SimultaneousEqn {
   double get e => _e!;
   double get f => _f!;
 
-  void solution() {
-   bool isSolvable = (_a! * _d!) - (_b! * _c!) == 0 ;
-
-   double getDeterminant() {
-     return (_a! * _d!) - (_b! * _c!);
-    }
-
-    if (isSolvable == true) {
-      return 'The 2 * 2 linear equation is not Solvable';
-    }
-
-    else {
-      String getX () {
-        double _x = ((_e! * _d!) - (_b! * _f!)) / getDeterminant();
-        return _x.toString();
-      }
-
-      String getY () {
-       double _y = ((_a! * _f!) - (_e! * _c!)) / getDeterminant();
-       return _y.toString();
-      }
-
-    }
-
-  }
-
-  String determinantIsZero () {
-    return 
-  }
-
+  
+  
   @override
   String toString() {
     // TODO: implement toString
