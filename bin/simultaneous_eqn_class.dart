@@ -53,11 +53,15 @@ class SimultaneousEqn {
     return _y;
   }
 
+  String xandY () {
+    if (isSolvable() == true);
+    return '${getX()} and ${getY()}';
+  }
   
   
   @override
   String toString() {
     // TODO: implement toString
-    return 'The value of X = getX and Y = ';
+    return 'The value of X = ${getX()} and Y = ${getY()}';
   }
 }
