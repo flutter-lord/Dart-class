@@ -1,3 +1,5 @@
+import 'dart:math';
+
 class SimultaneousEqn {
   
   double? _a;
@@ -23,6 +25,33 @@ class SimultaneousEqn {
   double get d => _d!;
   double get e => _e!;
   double get f => _f!;
+
+  double getDiscriminant() {
+    double _discriminant = pow(_b!, 2) - (4 * _a! *_c!);
+    return _discriminant; 
+  }
+
+  bool isSolvable() {
+    double _divisor = ((_a! * _d!) - (_b! * _c!));
+
+    if (_divisor == 0) {
+      return false;
+    }
+
+    else {
+      return true;
+    }
+  }
+
+  double getX() {
+    double _x = (-_b! + sqrt(getDiscriminant())) / (2 * _a!);
+    return _x;
+  }
+
+  double getY() {
+    double _y = (-_b! - sqrt(getDiscriminant())) / (2 * _a!);
+    return _y;
+  }
 
   
   
