@@ -39,7 +39,8 @@ class QuadraticEquation {
   }
 
   double getDiscriminant() {
-    return pow(_b!, 2) - (4 * _a! * _c!);
+    double _newDiscriminant = pow(_b!, 2) - (4 * _a! * _c!);
+    return _newDiscriminant;
   } 
 
   double getRoot1 () {
