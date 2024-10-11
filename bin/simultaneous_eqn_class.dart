@@ -16,61 +16,47 @@ class SimultaneousEqn {
     _e = e;
     _f = f; 
   }
-  set a (double a) => _a = a;   
+  
   double get a => _a!;
-
-  set b (double b) => _b = b;
   double get b => _b!;
-
-  set c (double c) => _c = c;
   double get c => _c!;
-
-  set d (double c) => _c = c;  
   double get d => _d!;
-
-  set e (double e) => _e = e;
   double get e => _e!;
-
-  set f (double f) => _f = f;
   double get f => _f!;
 
-  String isSolvable() {
-   double _determinant = ((_a! * _d!) - (_b! * _c!));
+  void solution() {
+   bool isSolvable = (_a! * _d!) - (_b! * _c!) == 0 ;
 
-    if (_determinant == 0) {
-      return determinantIsZero();
+   double getDeterminant() {
+     return (_a! * _d!) - (_b! * _c!);
+    }
+
+    if (isSolvable == true) {
+      return 'The 2 * 2 linear equation is not Solvable';
     }
 
     else {
-      return xAndY();
+      String getX () {
+        double _x = ((_e! * _d!) - (_b! * _f!)) / getDeterminant();
+        return _x.toString();
+      }
+
+      String getY () {
+       double _y = ((_a! * _f!) - (_e! * _c!)) / getDeterminant();
+       return _y.toString();
+      }
+
     }
 
   }
-  double getDeterminant() {
-    return (_a! * _d!) - (_b! * _c!);
-  }
-
-  double getX () {
-    double _x = ((_e! * _d!) - (_b! * _f!)) / getDeterminant();
-    return _x;
-  }
-
-  double getY () {
-    double _y = ((_a! * _f!) - (_e! * _c!)) / getDeterminant();
-    return _y;
-  }
 
   String determinantIsZero () {
-    return 'The 2 * 2 linear equation is not Solvable';
-  }
-
-  String xAndY () {
-    return '${getX} and ${getY}';
+    return 
   }
 
   @override
   String toString() {
     // TODO: implement toString
-    return 'The value of X = ${getX()} and Y = ${getY()}';
+    return 'The value of X = getX and Y = ';
   }
 }
