@@ -21,7 +21,7 @@ class QuadraticEquation {
   set c (double c) => _c = c;
   double get c => _c!;
 
-  String getDiscriminant () {
+  String getSolution () {
     double _discriminant = pow(_b!, 2) - (4 * _a! * _c!);
 
     if (_discriminant == 0) {
@@ -38,13 +38,17 @@ class QuadraticEquation {
 
   }
 
+  double getDiscriminant() {
+    return pow(_b!, 2) - (4 * _a! * _c!);
+  } 
+
   double getRoot1 () {
-    double _root1 = (-_b! + sqrt(pow(_b!, 2) - (4 * _a! * _c!))) / (2 * _a!);
+    double _root1 = (-_b! + sqrt(getDiscriminant())) / (2 * _a!);
     return _root1;
   }
 
   double getRoot2 () {
-    double _root2 = (-_b! - sqrt(pow(_b!, 2) - (4 * _a! * _c!))) / (2 * _a!);
+    double _root2 = (-_b! - sqrt(getDiscriminant())) / (2 * _a!);
     return _root2;
   }
 
