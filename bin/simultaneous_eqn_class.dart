@@ -33,11 +33,12 @@ class SimultaneousEqn {
   String isSolvable() {
 
     if (getDiscriminant() == 0) {
-      return 'The 2 * 2 linear equqtion has no solution'; 
+      return 'The 2 * 2 linear equqtion has no solution';
+       
     } 
 
     else {
-      return  '${getX()} and ${getY()}';
+      return 'The value of X is ${getX()} and Y is ${getY()}';
     }
   }
 
@@ -54,6 +55,6 @@ class SimultaneousEqn {
   @override
   String toString() {
     // TODO: implement toString
-    return  'X = ${getX()} and Y = ${getY()}';
+    return  '${getX()} and ${getY()}';
   }
 }
