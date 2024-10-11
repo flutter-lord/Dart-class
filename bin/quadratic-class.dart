@@ -21,11 +21,11 @@ class QuadraticEquation {
   set c (double c) => _c = c;
   double get c => _c!;
 
-  Object getDiscriminant () {
+  String getDiscriminant () {
     double _discriminant = pow(_b!, 2) - (4 * _a! * _c!);
 
     if (_discriminant == 0) {
-      return getRoot1();
+      return getRoot1().toString();
     }
 
     else if (_discriminant > 0) {
