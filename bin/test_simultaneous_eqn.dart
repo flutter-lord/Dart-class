@@ -1,7 +1,7 @@
 import 'simultaneous_eqn_class.dart';
 
 void main() {
-  SimultaneousEqn simultaneousEqn = SimultaneousEqn(1, 2, 4, 8, 7, 6);
+  SimultaneousEqn simultaneousEqn = SimultaneousEqn(2, 3, 8, 1, 2, 3);
 
   print(simultaneousEqn);
 }

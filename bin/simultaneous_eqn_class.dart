@@ -1,4 +1,5 @@
 class SimultaneousEqn {
+  
   double? _a;
   double? _b;
   double? _c;
@@ -15,18 +16,28 @@ class SimultaneousEqn {
     _e = e;
     _f = f; 
   }
-
+  set a (double a) => _a = a;   
   double get a => _a!;
+
+  set b (double b) => _b = b;
   double get b => _b!;
+
+  set c (double c) => _c = c;
   double get c => _c!;
+
+  set d (double c) => _c = c;  
   double get d => _d!;
+
+  set e (double e) => _e = e;
   double get e => _e!;
+
+  set f (double f) => _f = f;
   double get f => _f!;
 
   String isSolvable() {
-    bool _determinant = ((_a! * _d!) - (_b! * _c!) == 0);
+   double _determinant = ((_a! * _d!) - (_b! * _c!));
 
-    if (_determinant == true) {
+    if (_determinant == 0) {
       return determinantIsZero();
     }
 
