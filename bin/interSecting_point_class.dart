@@ -53,6 +53,16 @@ class IntersectingPoint {
     double _discriminant = (getA() * getD()) - (getB() * getC());
     return _discriminant;
   }
+
+   String solution() {
+    if (getDiscriminant() == 0) {
+      return 'The two lines are parallel';
+    }
+
+    else {
+      return 'The point of interSection of the two lines is (${getX()}, ${getY()})';
+    }
+  }
   
   double getX() {
     double unknownX = ((getE() * getD()) - (getB() * getF())) / getDiscriminant();
@@ -62,17 +72,6 @@ class IntersectingPoint {
   double getY() {
     double unknownY = ((getA() * getF()) - (getE() * getC())) / getDiscriminant();
     return unknownY;
-  }
-
-  String solution() {
-    if (getDiscriminant() == 0) {
-      return 'The two lines are parallel';
-    }
-
-    else {
-      return 'The point of interSection of the two lines is (${getX()}, ${getY()})';
-    }
-
   }
 
   @override
