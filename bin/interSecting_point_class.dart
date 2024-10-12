@@ -20,12 +20,12 @@ class IntersectingPoint {
   double get y4 => _y4!;
 
   double getE() {
-    double _e = (_x1! * (_y1! - _y2!)) - (_y1! * (_x1! - _x2!)); 
+    double _e = (_x1! * getA()) - (_y1! * getB()); 
     return _e;
   }
 
   double getF() {
-    double _f = (_x3! * (_y3! - _y4!)) - (_y3! * (_x3! - _x4!));
+    double _f = (_x3! * getC()) - (_y3! * getD());
     return _f;
   }
 
