@@ -78,7 +78,7 @@ class IntersectingPoint {
   @override
   String toString() {
     // TODO: implement toString
-    return '$_x1, $_y1';
+    return '${getX()}, ${getY()}';
   }
-  
+
 } 
