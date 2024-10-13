@@ -13,7 +13,7 @@ class Password {
   }
 
   String a() {
-    String _alphabet = 'ABCDEFGHIJKLMNOPQRTUVWXYZ';
+    String _alphabet = 'ABCDEFGHIJKLMNOPQRTUVWXYZabcdefghijklmnopqrstuvwxyz';
     return _alphabet; 
   }
 
@@ -28,7 +28,7 @@ class Password {
   }
 
   String checkPasswordStatus() {
-    if (passwordLength() >= 8 && passwordLength() <= 16 && _characters!.contains(a()) == true && _characters!.contains(b()) == true && _characters!.contains(c())== true) {
+    if (passwordLength() >= 8 && passwordLength() <= 16 && _characters!.contains(a()) == true && _characters!.contains(b()) == true && _characters!.contains(c()) == true) {
       return 'The password you have entered is valid';
     }
 
