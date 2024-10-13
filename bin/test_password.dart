@@ -4,9 +4,9 @@ import 'password_class.dart';
 
 void main() {
   stdout.write('Enter your password: ');
-  stdin.readLineSync()!;
+  String characters = stdin.readLineSync()!;
 
-  Password password = Password('Richard@22');
+  Password password = Password(characters);
 
   print(password);
   print(password.checkPasswordStatus());
